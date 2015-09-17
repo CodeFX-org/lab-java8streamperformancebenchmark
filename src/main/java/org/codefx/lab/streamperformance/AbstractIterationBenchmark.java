@@ -21,9 +21,9 @@ import static java.lang.Math.max;
  * Initializes data structures and defines how often each benchmark is run. Also defines some
  * operations that can be called from the benchmark code.
  */
-@Fork(value = 1)
-@Warmup(iterations = 3, time = 30, timeUnit = TimeUnit.SECONDS)
-@Measurement(iterations = 3, time = 30, timeUnit = TimeUnit.SECONDS)
+@Fork(value = 2)
+@Warmup(iterations = 5, time = 3, timeUnit = TimeUnit.SECONDS)
+@Measurement(iterations = 5, time = 3, timeUnit = TimeUnit.SECONDS)
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @State(Scope.Thread)
