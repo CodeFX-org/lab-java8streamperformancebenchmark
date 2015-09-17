@@ -34,11 +34,13 @@ public abstract class AbstractIterationBenchmark {
 	private static final int NUMBER_OF_RANDOM_ELEMENTS = 500_000;
 
 	public final int[] intArray;
+	public final Integer[] integerArray;
 	public final ArrayList<Integer> intList;
 
 	public AbstractIterationBenchmark() {
 		intArray = createIntArray();
 		intList = copyIntArray(intArray);
+		integerArray = intList.toArray(new Integer[intList.size()]);
 	}
 
 	private static int[] createIntArray() {
